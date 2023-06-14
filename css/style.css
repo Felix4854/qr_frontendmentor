@@ -1,0 +1,64 @@
+:root{
+    --paquete:#FFF;
+    --negro:#000;
+    --azul:	#1E90FF;
+    --gray:#D3D3D3;
+    --lightblue:#87CEFA;
+
+    --fuente_principal : 'Open Sans';
+    
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/*Globales*/
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 1.25rem;
+    margin-left: auto;
+}
+
+
+
+.modificador h1{
+    text-align: justify;
+    padding: 0 15px;
+    font-family: var(--fuente_principal);
+    color: var(--negro);
+}
+
+
+.modificador{
+    width: 90%;
+    max-width: 380px;
+    /* le colocamos un max width para que la caja respete un tamaño, 
+    y no se este agrandando a medida que la pantalla se grande */
+    background-color: var(--paquete);
+    padding: 10px;
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+}
+
+.modificador img{
+    width: 100%;
+    border-radius: 5%;
+}
+.modificador p {
+    color: var(--gray);
+    text-align: justify;
+    padding: 10px;
+}
